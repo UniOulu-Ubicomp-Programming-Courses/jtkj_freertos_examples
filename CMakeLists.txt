@@ -51,7 +51,7 @@ set(FREERTOS_CONFIG_DIR "${CMAKE_SOURCE_DIR}/config")
 include_directories(${FREERTOS_CONFIG_DIR})
 
 # Add librabries. The SDK is using the FreeRTOS so always after the include_directories
-add_subdirectory(libs/shellSDK)
+add_subdirectory(libs/TKJHAT)
 
 # Links. Add all libraries that application is using. It must at least use the pico_stdlib and the FreeRTOS-Kernel-Heap4
 # FREERTOS: Note, you should pick the FreeRTOS library that suits you best:
@@ -62,7 +62,7 @@ add_subdirectory(libs/shellSDK)
 target_link_libraries(${APP_NAME}
   pico_stdlib
   FreeRTOS-Kernel-Heap4
-  shellSDK
+  TKJHAT_SDK
   hardware_i2c
   hardware_pio
   hardware_dma

@@ -25,14 +25,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#include <shellSDK/SDK.h>
+#include <tkjhat/sdk.h>
 // #include <icm42670.h>
 
 //#include "tusb.h" //is it needed?
 #include "hardware/irq.h"
 #include "hardware/pwm.h"
-#include <shellSDK/ssd1306.h>
-#include <shellSDK/pdm_microphone.h>
+#include <tkjhat/ssd1306.h>
+#include <tkjhat/pdm_microphone.h>
 #include <stdio.h>
 #include <math.h>
 
@@ -63,7 +63,7 @@ static int addr = 0x68;
 static ssd1306_t disp;
 
 
-void init_shell(){
+void init_hat_sdk(){
     //Turn off the RGB
     stop_rgb_led();
 }
