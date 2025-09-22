@@ -14,7 +14,6 @@ int main() {
     init_hat_sdk();
     sleep_ms(200);
     printf("Hello World\n");
-    stdio_flush();
     int i = 0;
     while(1) {
         printf("Iteration %d\n",i);
