@@ -8,14 +8,16 @@
 #include <queue.h>
 #include <task.h>
 
-#include <tkjhat/sdk.h>
-#include <pico/binary_info.h>
+#include "tkjhat/sdk.h"
+
 
 
 int main() {
     stdio_init_all();
-    sleep_ms(2000); //Wait to see the output.
+    sleep_ms(1500); //Wait to see the output.
     init_hat_sdk();
+
+
 
     
     return 0;
